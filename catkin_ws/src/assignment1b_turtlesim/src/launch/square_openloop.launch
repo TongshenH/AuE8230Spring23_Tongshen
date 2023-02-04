@@ -1,0 +1,13 @@
+<launch>
+    <arg name="x" default = "1"/>
+    <arg name="y" default = "1"/>
+    <arg name="tol" default = "0.1"/>
+    <arg name="atol" default = "0.1"/>
+    <node pkg="turtlesim" type="turtlesim_node" name="turtlesim_node"/>
+    <node pkg="assignment1b_turtlesim" type="square_openloop.py" name="square_openloop">
+	<param name="x" value="$(arg x)"/>
+	<param name="y" value="$(arg y)"/>
+	<param name="tol" value="$(arg tol)"/>
+	<param name="atol" value="$(arg atol)"/>
+    </node>
+</launch>
