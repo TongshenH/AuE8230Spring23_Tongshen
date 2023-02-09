@@ -195,7 +195,7 @@ class TurtleBot:
                     # Publish the velocity
                     self.velocity_publisher.publish(vel_msg)
                     # Set the x-axis speed
-                    vel_msg.linear.x = 1.2
+                    vel_msg.linear.x = 0.3
                     # Take actual time to velocity calculus
                     t1 = rospy.Time.now().to_sec()
                     t_total1 = t1 - t0
@@ -208,7 +208,7 @@ class TurtleBot:
                     # Publish the angular velocity
                     self.velocity_publisher.publish(vel_msg)
                     # Set the angular speed
-                    vel_msg.angular.z = 1.2
+                    vel_msg.angular.z = 0.3
                     t1 = rospy.Time.now().to_sec()
                     t_total2 = t1 - t0
                     current_angle1 = t_total2 * vel_msg.angular.z
@@ -239,7 +239,7 @@ if __name__ == '__main__':
     try:
         x = TurtleBot()
         # x.circle()
-        # x.square_openloop()
-        x.square_closedloop()
+        x.square_openloop()
+        # x.square_closedloop()
     except rospy.ROSInterruptException:
         pass
