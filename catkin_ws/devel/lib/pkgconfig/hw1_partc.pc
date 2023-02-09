@@ -1,0 +1,8 @@
+prefix=/home/tongshen/Projects/AuE8230Spring23_Tongshen/catkin_ws/devel
+
+Name: hw1_partc
+Description: Description of hw1_partc
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

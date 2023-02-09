@@ -1,2 +1,2 @@
-assignment1b_turtlesim
+assignment1b_turtlesim:hw1_partc:turtlebot3_simulations/turtlebot3_fake:turtlebot3_simulations/turtlebot3_gazebo:turtlebot3_simulations/turtlebot3_simulations
 -DCATKIN_DEVEL_PREFIX=/home/tongshen/Projects/AuE8230Spring23_Tongshen/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/tongshen/Projects/AuE8230Spring23_Tongshen/catkin_ws/install -G Unix Makefiles

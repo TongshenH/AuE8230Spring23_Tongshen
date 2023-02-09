@@ -7,5 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PKG_CONFIG_PATH='/home/tongshen/Projects/autonomy_hw/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig'
 export PWD='/home/tongshen/Projects/AuE8230Spring23_Tongshen/catkin_ws/build'

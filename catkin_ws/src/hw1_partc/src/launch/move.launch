@@ -1,0 +1,4 @@
+<launch>
+   <node pkg="hw1_partc" type="circle_slow.py" name="circle_slow" output="screen" if="$(eval arg('code') =='circle')" />
+   <node pkg="hw1_partc" type="square_openloop_slow.py" name="square_openloop_slow" output="screen" if="$(eval arg('code') =='square')" />
+</launch>
